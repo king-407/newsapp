@@ -18,6 +18,9 @@ const App=()=>{
         <Navbar/>
         
         <Switch>
+        <Route exact path="/">
+          <News PageSize={6} key="general" category="general" country="in" />
+          </Route>
           <Route exact path="/science">
           <News PageSize={6} key="science" category="science" country="in" />
           </Route>
@@ -33,9 +36,7 @@ const App=()=>{
           <Route exact path="/health">
           <News PageSize={6} key="health" category="health" country="in" />
           </Route>
-          <Route exact path="/">
-          <News PageSize={6} key="general" category="general" country="in" />
-          </Route>
+          
           <Route exact path="/business">
           <News PageSize={6} key="business" category="business" country="in" />
           </Route>
